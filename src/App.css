@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.sideBarStockChartsHolder{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+}
+.sidebar{
+  height: 100vh;
+  background: #333;
+  width: 5%;
+}
+.stockCharts{
+  height: 100vh;
+  background: rgb(85, 85, 85);
+  width:95%;
+}
+.main header{
+  height: 100px;
+  background: rgb(17, 17, 17);
+  flex-direction: column;
+  /* border-radius: 50px; */
+  margin-right: 80px;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+  height: 60px;
+  justify-content: center;
+  transition: all .4s;
+  width: 100%;
+}
+
+.headerSearch{
+  flex-direction: column;
+    border-radius: 50px;
+    margin-right: 80px;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+    height: 45px;
+    justify-content: center;
+    transition: all .4s;
+    width: 40%;
+}
+
+.searchBar{
+  
+  flex-direction: column;
+  border-radius: 50px;
+  margin-right: 80px;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+  height: 45px;
+  justify-content: center;
+  transition: all .4s;
+  width: 40%;
+   }
+    @media only screen and (max-width: 800px) {
+      .searchBar {
+        width: 60%; } }
+    @media only screen and (max-width: 600px) {
+      .searchBar {
+        display: none; } }
+    .searchBar .searchBar__results {
+      transition: all .4s;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background-color: #373a46;
+      z-index: -1;
+      padding: 0;
+      top: 0;
+      border: 15px solid #373a46;
+      border-top: 40px solid #373a46;
+      border-radius: 5px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      display: none; 
+    }
+      .searchBar .searchBar__results li {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 15px;
+        border-radius: 10px;
+        transition: all .4s; }
+        .searchBar .searchBar__results li a {
+          color: white;
+          width: 100%; }
+        .searchBar .searchBar__results li h4, .searchBar .searchBar__results li h6 {
+          margin: 5px 0; }
+        .searchBar .topbar__results li h6 {
+          color: #676976;
+          text-align: left; }
+        .topbar__searchbar .searchBar__results li:hover {
+          color: #5eb5f8;
+          background-color: #3c3c4d;
+          cursor: pointer; 
+        }
+
